@@ -1,3 +1,7 @@
+body{
+    background-color: #142159;
+}
+
 .form{
     max-width: 328px;
     width: 100%;
@@ -5,6 +9,7 @@
     margin: 100px auto;
     
 }
+
 
 /*Título*/
 
