@@ -615,19 +615,25 @@ hr{
 }
 
 /*LEGENDA DOS GRÁFICOS*/
-.legend__box{
+.legend__box,
+.legend__box2,
+.legend__box3{
     margin-top: 16px;
     margin-left: 24px;
 }
 
-.legend__box button{
+.legend__box button,
+.legend__box2 button,
+.legend__box3 button{
     width: 12px;
     height: 12px;
     border-radius: 50%;
     margin-right: 8px;
 }
 
-.legend__box span{
+.legend__box span,
+.legend__box2 span,
+.legend__box3 span{
     margin-right: 32px;
     font-weight: 500;
     font-size: 12px;
@@ -976,10 +982,109 @@ hr{
         justify-content: space-between;
     }
 
-    .canvas{
+    .canvas1{
         width: 1116px;
         height: 196px;
+        display: none;
     }
+
+    .canvas2{
+        width: 1116px;
+        height: 291px;
+        display: none;
+    }
+
+    .canvas3{
+        width: 680px;
+        height: 235px;
+        margin-bottom: 70px;
+    }
+
+    .legend__box{
+        display: none;
+    }
+
+    .legend__box2{
+        display: none;
+    }
+
+    .dropdown__revendedores{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        margin-bottom: 24px;
+        width: 280px;
+        height: 40px;
+        border: 1px solid #999999;
+        border-radius: 8px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.005em;
+        color: #999999;
+    }
+
+    .canvas__revendedores{
+        display: flex;
+    }
+
+    .revendedores__list--item{
+        display: flex;
+        gap: 16px;
+        margin-top: 24px;
+    }
+
+    .name__sales__revendedor{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .revender__name{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+    }
+
+    .sales__number{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.005em;
+        color: #555555;
+    }
+
+    .sales__percent{
+        display: flex;
+        align-items: center;
+    }
+
+    .sales__percent span{
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.005em;
+        color: #158F2E;
+    }
+
+    .revendedores__area{
+        width: 340px;
+        height: 429px;
+        margin-left: 64px;
+        border: 2px solid #F1F2F9;
+        border-radius: 8px;
+        background-color: #ffffff;
+        padding: 24px;
+    }
+
+    
 
     
 

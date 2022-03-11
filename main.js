@@ -1,7 +1,7 @@
-//GRÁFICO
+//GRÁFICO Vendas
 
-const ctx = document.getElementById('myChart').getContext('2d');
-const myChart = new Chart(ctx, {
+const vendas = document.getElementById('myChart__vendas').getContext('2d');
+const myChart__vendas = new Chart(vendas, {
     type: 'line',
     data: {
 
@@ -89,20 +89,173 @@ const myChart = new Chart(ctx, {
 //BOTOÕES DO GRÁFICO
 
 
-document.getElementById('blue').style.backgroundColor = myChart.data.datasets[0].backgroundColor;
-document.getElementById('red').style.backgroundColor = myChart.data.datasets[1].backgroundColor;
-document.getElementById('yellow').style.backgroundColor = myChart.data.datasets[2].backgroundColor;
-document.getElementById('green').style.backgroundColor = myChart.data.datasets[3].backgroundColor;
+document.getElementById('blue').style.backgroundColor = myChart__vendas.data.datasets[0].backgroundColor;
+document.getElementById('red').style.backgroundColor = myChart__vendas.data.datasets[1].backgroundColor;
+document.getElementById('yellow').style.backgroundColor = myChart__vendas.data.datasets[2].backgroundColor;
+document.getElementById('green').style.backgroundColor = myChart__vendas.data.datasets[3].backgroundColor;
 
 function toggleData(value) {
-    const visibilityData = myChart.isDatasetVisible(value);
+    const visibilityData = myChart__vendas.isDatasetVisible(value);
     if (visibilityData  === true ){
-        myChart.hide(value);
+        myChart__vendas.hide(value);
     }
     if (visibilityData  === false ){
-        myChart.show(value);
+        myChart__vendas.show(value);
     }
 }
+
+
+/*GRÁFICO 2 */
+
+const pedidos = document.getElementById('myChart__pedidos').getContext('2d');
+const myChart__pedidos = new Chart(pedidos, {
+    type: 'line',
+    data: {
+
+        labels: ['06/10/21', '07/10/21', '08/10/21', '09/10/21', '10/10/21', '11/10/21'],
+        datasets: [
+        {
+            
+            data: [0, 70, 50, 80, 90, 100],
+            backgroundColor: [
+                'rgba(66, 93, 199, 1)'
+            ],
+            borderColor: [
+                'rgba(66, 93, 199, 1)'
+            ],
+            borderWidth: 1,
+            pointRadius: 0,
+            label: 'Estornado'
+
+            
+        }
+        ]
+
+
+    },
+    options: {
+        ticks: {
+            stepSize: 50
+        },
+        maintainAspectRatio: false,
+        plugins:{
+               legend: {
+                 display: false
+                       },
+                    }
+               },
+               
+
+
+});
+
+
+//BOTOÕES DO GRÁFICO
+
+
+document.getElementById('blue2').style.backgroundColor = myChart__pedidos.data.datasets[0].backgroundColor;
+
+function toggleData2(value) {
+    const visibilityData = myChart__pedidos.isDatasetVisible(value);
+    if (visibilityData  === true ){
+        myChart__pedidos.hide(value);
+    }
+    if (visibilityData  === false ){
+        myChart__pedidos.show(value);
+    }
+}
+
+/*GRÁFICO 3 */
+
+const revendedores = document.getElementById('myChart__revendedores').getContext('2d');
+const myChart__revendedores = new Chart(revendedores, {
+    type: 'line',
+    data: {
+
+        labels: ['06/10/21', '07/10/21', '08/10/21', '09/10/21', '10/10/21', '11/10/21'],
+        datasets: [
+        {
+            
+            data: [0, 70, 50, 80, 90, 100],
+            backgroundColor: [
+                'rgba(66, 93, 199, 1)'
+            ],
+            borderColor: [
+                'rgba(66, 93, 199, 1)'
+            ],
+            borderWidth: 1,
+            pointRadius: 0,
+            label: 'Estornado'
+
+            
+        },
+        {
+            
+            data: [0, 60, 90, 50, 80, 70],
+            backgroundColor: [
+                'rgba(46, 176, 66, 1)'
+            ],
+            borderColor: [
+                'rgba(46, 176, 66, 1)'
+            ],
+            borderWidth: 1,
+            pointRadius: 0,
+            label: 'Pago' 
+        },
+        {
+            
+            data: [0, 80, 80, 60, 50, 70],
+            backgroundColor: [
+                'rgba(240, 52, 96, 1)'
+            ],
+            borderColor: [
+                'rgba(240, 52, 96, 1)'
+            ],
+            borderWidth: 1,
+            pointRadius: 0,
+            label: 'Cancelado'
+
+            
+        }
+        ]
+
+
+    },
+    options: {
+        ticks: {
+            stepSize: 50
+        },
+        maintainAspectRatio: false,
+        plugins:{
+               legend: {
+                 display: false
+                       },
+                    }
+               },
+               
+
+
+});
+
+
+//BOTOÕES DO GRÁFICO 3
+
+
+document.getElementById('blue3').style.backgroundColor = myChart__revendedores.data.datasets[0].backgroundColor;
+document.getElementById('red3').style.backgroundColor = myChart__revendedores.data.datasets[1].backgroundColor;
+document.getElementById('yellow3').style.backgroundColor = myChart__revendedores.data.datasets[2].backgroundColor;
+
+function toggleData3(value) {
+    const visibilityData = myChart__revendedores.isDatasetVisible(value);
+    if (visibilityData  === true ){
+        myChart__revendedores.hide(value);
+    }
+    if (visibilityData  === false ){
+        myChart__revendedores.show(value);
+    }
+}
+
+
 
 
 
