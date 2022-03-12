@@ -12,7 +12,8 @@
 
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/index.css">
-    <link rel="stylesheet" href="./assets/css/graf.css">
+    
+    
 </head>
 <body>
 
@@ -150,7 +151,7 @@
                     </li>
 
                     <li class="lateral__menu__list--item">
-                        <button class="lateral__menu__button">
+                        <button onclick="show()" class="lateral__menu__button">
                             <div class="lateral__menu__button--image">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10.087 2.02852C11.1249 0.927887 12.8751 0.927887 13.913 2.02852C14.5279 2.68061 15.4326 2.97456 16.3133 2.80843C17.7999 2.52803 19.2159 3.55679 19.4086 5.05724C19.5228 5.94621 20.0819 6.7158 20.8921 7.09907C22.2596 7.74599 22.8004 9.41058 22.0744 10.7377C21.6442 11.524 21.6442 12.4753 22.0744 13.2616C22.8004 14.5887 22.2596 16.2533 20.8921 16.9002C20.0819 17.2835 19.5228 18.0531 19.4086 18.9421C19.2159 20.4425 17.7999 21.4713 16.3133 21.1909C15.4326 21.0247 14.5279 21.3187 13.913 21.9708C12.8751 23.0714 11.1249 23.0714 10.087 21.9708C9.47213 21.3187 8.56741 21.0247 7.68666 21.1909C6.2001 21.4713 4.7841 20.4425 4.59141 18.9421C4.47724 18.0531 3.91809 17.2835 3.1079 16.9002C1.74043 16.2533 1.19956 14.5887 1.92562 13.2616C2.35579 12.4753 2.35579 11.524 1.92562 10.7377C1.19956 9.41058 1.74043 7.74599 3.1079 7.09907C3.91809 6.7158 4.47724 5.94621 4.59141 5.05724C4.7841 3.55679 6.2001 2.52803 7.68666 2.80843C8.56741 2.97456 9.47213 2.68061 10.087 2.02852Z" fill="#CDD2EB"/>
@@ -177,7 +178,7 @@
                         </button>
                     </li>
 
-                    <ul class="dropdown__list">
+                    <ul id="drop1" class="dropdown__list">
                         <li class="dropdown__list--vender">Gerador de link</li>   
                         <li class="dropdown__list--vender">Vitrine digital</li>   
                         <li class="dropdown__list--vender">Carrinhos compartilháveis</li>   
@@ -185,7 +186,7 @@
                     </ul>
 
                     <li class="lateral__menu__list--item">
-                        <button class="lateral__menu__button">
+                        <button  class="lateral__menu__button">
                             <div class="lateral__menu__button--image">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6.625 2.99963L3.75 6.59958V19.1994C3.75 19.6768 3.95193 20.1346 4.31138 20.4722C4.67082 20.8097 5.15833 20.9994 5.66667 20.9994H19.0833C19.5917 20.9994 20.0792 20.8097 20.4386 20.4722C20.7981 20.1346 21 19.6768 21 19.1994V6.59958L18.125 2.99963H6.625Z" fill="#CDD2EB" stroke="#CDD2EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -202,7 +203,7 @@
                     </li>
 
                     <li class="lateral__menu__list--item">
-                        <button class="lateral__menu__button">
+                        <button onclick="show1()" class="lateral__menu__button">
                             <div class="lateral__menu__button--image">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12 21.9992C17.5228 21.9992 22 17.5221 22 11.9994C22 6.4766 17.5228 1.99951 12 1.99951C6.47715 1.99951 2 6.4766 2 11.9994C2 17.5221 6.47715 21.9992 12 21.9992Z" fill="#CDD2EB" stroke="#CDD2EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -222,14 +223,14 @@
                         </button>
                     </li>
 
-                    <ul class="dropdown__list">
+                    <ul id="drop2" class="dropdown__list">
                         <li class="dropdown__list--vender">Pagamentos</li>   
                         <li class="dropdown__list--vender"> Comissões</li>   
                         <li class="dropdown__list--vender">Bônus de performance</li>      
                     </ul>
 
                     <li class="lateral__menu__list--item">
-                        <button class="lateral__menu__button">
+                        <button onclick="show2()" class="lateral__menu__button">
                             <div class="lateral__menu__button--image">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_713_3999)">
@@ -253,7 +254,7 @@
                         </button>
                     </li>
 
-                    <ul class="dropdown__list">
+                    <ul id="drop3" class="dropdown__list">
                         <li class="dropdown__list--vender">Menbros </li>   
                         <li class="dropdown__list--vender">Gerais</li>   
                         <li class="dropdown__list--vender">Customizações</li>   
@@ -261,7 +262,7 @@
                     </ul>
 
                     <li class="lateral__menu__list--item">
-                        <button class="lateral__menu__button">
+                        <button onclick="show3()" class="lateral__menu__button">
                             <div class="lateral__menu__button--image">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10.5 3.74915H3.75V10.4991H10.5V3.74915Z" fill="#425DC7" stroke="#425DC7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -282,7 +283,7 @@
                         </button>
                     </li>
 
-                    <ul class="dropdown__list">
+                    <ul id="drop4" class="dropdown__list">
                         <li class="dropdown__list--vender">Hubly Store</li>   
                         <li class="dropdown__list--vender">Retailer Form</li>   
                         <li class="dropdown__list--vender">Retailer Cluster</li>   
@@ -351,21 +352,21 @@
                             Resumo de dados
                         </h3>
 
-                        <ul class="filter__date">
-                            <li class="filter__date__item" ><button id="sete">Últimos 7 dias</button></li>
-                            <li class="filter__date__item"><button id="quinze">Últimos 15 dias</button></li>
-                            <li class="filter__date__item"><button id="mes">Último mês</button></li>
-                            <li class="filter__date__item"><button id="ano">Último ano</button></li>
-                            <li class="filter__date__item">
-                                <button class="filter__date__item--button" id="pers">
+                        <div class="filter__date">
+                            <button id="sete">Últimos 7 dias</button>
+                            <button id="quinze">Últimos 15 dias</button>
+                            <button id="mes">Último mês</button>
+                            <button id="ano">Último ano</button>
+                        
+                            <button class="filter__date__item--button" id="pers">
                                 Personalizado
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M5.00016 6.5L8.00016 9.5L11.0002 6.5" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                                     
-                            </button></li>
+                            </button>
                             
-                        </ul>
+                        </div>
 
                         <div class="description__date">
                             <p class="description__date__text">
@@ -378,211 +379,258 @@
                     </div>
                 </div>
 
-                <section class="graphic">
-                    <h3 class="report">
-                        📈 <span>Relatório Geral</span> 
-                    </h3>
 
-                    <ul class="sales">
-                        <li class="sales__item">
-                            <button class="button__sale">
-                                Vendas
-                                
-                            </button>
-                        </li>
+                <section class="graphic__position">
 
-                        <li class="sales__item">
-                            <button class="button__sale">
-                                Pedidos
-                            </button>
-                        </li>
-
-                        <li class="sales__item">
-                            <button class="button__sale">
-                                Revendedores
-                            </button>
-                        </li>
-
+                    <div id="vendas" class="tabcontent">
+                        <h3 class="report">
+                            📈 <span>Relatório Geral</span> 
+                        </h3>
+                          
+                                              <ul class="sales">
+                                                  <li class="sales__item">
+                                                      <button class="tablinks" onclick="openCity(event, 'vendas')">Vendas</button>
+                                                  </li>
+                          
+                                                  <li class="sales__item">
+                                                      <button class="tablinks" onclick="openCity(event, 'pedidos')">Pedidos</button>
+                                                  </li>
+                          
+                                                  <li class="sales__item">
+                                                      <button class="tablinks" onclick="openCity(event, 'revendedores')">Revendedores</button>
+                                                  </li>
+                          
+                                                  
+                                                  
+                                              </ul>
+                                              <hr>
+                      
+                        <ul class="filter__revenues">
+                                                  <li class="filter__revenues__item">
+                                                      
+                                                          <div class="revenues__button--image">
+                                                              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                  <rect width="48" height="48" rx="12" fill="#F1F2F9"/>
+                                                                  <path d="M24 37.3333C31.3638 37.3333 37.3334 31.3638 37.3334 24C37.3334 16.6362 31.3638 10.6666 24 10.6666C16.6362 10.6666 10.6667 16.6362 10.6667 24C10.6667 31.3638 16.6362 37.3333 24 37.3333Z" fill="#CDD2EB" stroke="#CDD2EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                  <path d="M28 18.6666H22.8889C21.2933 18.6666 20 19.8605 20 21.3333C20 22.8061 21.2933 24 22.8889 24H25.1111C26.7067 24 28 25.1938 28 26.6666C28 28.1394 26.7067 29.3333 25.1111 29.3333H20" stroke="#425DC7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                  <path d="M24 16V18.6667" stroke="#425DC7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                  <path d="M24 29.3334L24 32" stroke="#425DC7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                              </svg>
+                                                                  
+                                                          </div>
+                                                          <div class="revenues__button--text">
+                                                              <span class="text__revenues">
+                                                                  Faturamento
+                                                              </span>
+                                                              
+                                                              <span class="price__revenues">
+                                                                  R$ 800.803,00
+                                                              </span>
+                                                              
+                                                          
+                                                          </div>
+                          
+                                                  
+                                                  </li>
+                                                  <li class="filter__revenues__item">
+                                                      
+                                                          <div class="revenues__button--image">
+                                                              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                  <rect width="48" height="48" rx="12" fill="#F1F2F9"/>
+                                                                  <path d="M16.8333 12L13 16.8V33.6C13 34.2365 13.2692 34.847 13.7485 35.2971C14.2278 35.7471 14.8778 36 15.5556 36H33.4444C34.1222 36 34.7722 35.7471 35.2515 35.2971C35.7308 34.847 36 34.2365 36 33.6V16.8L32.1667 12H16.8333Z" fill="#CDD2EB" stroke="#CDD2EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                  <path d="M13 16.8002H36" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                  <path d="M29.6115 21.5999C29.6115 22.8738 29.073 24.0957 28.1145 24.9965C27.1559 25.8974 25.8559 26.4035 24.5004 26.4035C23.1448 26.4035 21.8448 25.8974 20.8863 24.9965C19.9277 24.0957 19.3893 22.8738 19.3893 21.5999" stroke="#425DC7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                              </svg>
+                                                                  
+                                                          </div>
+                                                          <div class="revenues__button--text">
+                                                              <span class="text__revenues">
+                                                                  Vendas
+                                                              </span>
+                                                              <span class="price__revenues">
+                                                                  1830
+                                                              </span>
+                                                          </div>
+                          
+                                                      
+                                                  </li>
+                          
+                                                  <li class="filter__revenues__item">
+                                                      
+                                                          <div class="revenues__button--image">
+                                                              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                  <rect width="48" height="48" rx="12" fill="#F1F2F9"/>
+                                                                  <path d="M16.8333 12L13 16.8V33.6C13 34.2365 13.2692 34.847 13.7485 35.2971C14.2278 35.7471 14.8778 36 15.5556 36H33.4444C34.1222 36 34.7722 35.7471 35.2515 35.2971C35.7308 34.847 36 34.2365 36 33.6V16.8L32.1667 12H16.8333Z" fill="#CDD2EB" stroke="#CDD2EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                  <path d="M13 16.8002H36" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                  <path d="M29.6115 21.5999C29.6115 22.8738 29.073 24.0957 28.1145 24.9965C27.1559 25.8974 25.8559 26.4035 24.5004 26.4035C23.1448 26.4035 21.8448 25.8974 20.8863 24.9965C19.9277 24.0957 19.3893 22.8738 19.3893 21.5999" stroke="#425DC7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                              </svg>
+                                                                  
+                                                          </div>
+                                                          <div class="revenues__button--text">
+                                                              <span class="text__revenues">
+                                                                  Ticket médio
+                                                              </span>
+                                                              <span class="price__revenues">
+                                                                  R$ 437,59
+                                                              </span>
+                                                          </div>
+                                                      
+                                                  </li>
+                                                                        
+                                              </ul>
+                        <div class="canvas1">
+                                                  <canvas id="myChart__vendas"> </canvas>
+                          
+                                              </div>
+                                              <div class="legend__box">
+                                                  <button id="blue" onclick="toggleData(0)" class="legend-button">
+                                                  </button>
+                                                  <span class="legend-text">Estornado</span>
+                              
+                                                  <button id="red" onclick="toggleData(1)" class="legend-button"></button>
+                                                  <span class="legend-text">Cancelado</span>
+                              
+                                                  <button id="yellow" onclick="toggleData(2)" class="legend-button"></button>
+                                                  <span class="legend-text">Não pago</span>
+                              
+                                                  <button id="green" onclick="toggleData(3)" class="legend-button"></button>
+                                                  <span class="legend-text">Pago</span>
+                                              </div>
+                      </div>
+                      
                         
                         
-                    </ul>
-                    <hr>
-
-                    <ul class="filter__revenues">
-                        <li class="filter__revenues__item">
-                            
-                                <div class="revenues__button--image">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="48" height="48" rx="12" fill="#F1F2F9"/>
-                                        <path d="M24 37.3333C31.3638 37.3333 37.3334 31.3638 37.3334 24C37.3334 16.6362 31.3638 10.6666 24 10.6666C16.6362 10.6666 10.6667 16.6362 10.6667 24C10.6667 31.3638 16.6362 37.3333 24 37.3333Z" fill="#CDD2EB" stroke="#CDD2EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M28 18.6666H22.8889C21.2933 18.6666 20 19.8605 20 21.3333C20 22.8061 21.2933 24 22.8889 24H25.1111C26.7067 24 28 25.1938 28 26.6666C28 28.1394 26.7067 29.3333 25.1111 29.3333H20" stroke="#425DC7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M24 16V18.6667" stroke="#425DC7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M24 29.3334L24 32" stroke="#425DC7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                        
-                                </div>
-                                <div class="revenues__button--text">
-                                    <span class="text__revenues">
-                                        Faturamento
-                                    </span>
-                                    
-                                    <span class="price__revenues">
-                                        R$ 800.803,00
-                                    </span>
-                                    
-                                
-                                </div>
-
-                        
-                        </li>
-                        <li class="filter__revenues__item">
-                            
-                                <div class="revenues__button--image">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="48" height="48" rx="12" fill="#F1F2F9"/>
-                                        <path d="M16.8333 12L13 16.8V33.6C13 34.2365 13.2692 34.847 13.7485 35.2971C14.2278 35.7471 14.8778 36 15.5556 36H33.4444C34.1222 36 34.7722 35.7471 35.2515 35.2971C35.7308 34.847 36 34.2365 36 33.6V16.8L32.1667 12H16.8333Z" fill="#CDD2EB" stroke="#CDD2EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M13 16.8002H36" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M29.6115 21.5999C29.6115 22.8738 29.073 24.0957 28.1145 24.9965C27.1559 25.8974 25.8559 26.4035 24.5004 26.4035C23.1448 26.4035 21.8448 25.8974 20.8863 24.9965C19.9277 24.0957 19.3893 22.8738 19.3893 21.5999" stroke="#425DC7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                        
-                                </div>
-                                <div class="revenues__button--text">
-                                    <span class="text__revenues">
-                                        Vendas
-                                    </span>
-                                    <span class="price__revenues">
-                                        1830
-                                    </span>
-                                </div>
-
-                            
-                        </li>
-
-                        <li class="filter__revenues__item">
-                            
-                                <div class="revenues__button--image">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="48" height="48" rx="12" fill="#F1F2F9"/>
-                                        <path d="M16.8333 12L13 16.8V33.6C13 34.2365 13.2692 34.847 13.7485 35.2971C14.2278 35.7471 14.8778 36 15.5556 36H33.4444C34.1222 36 34.7722 35.7471 35.2515 35.2971C35.7308 34.847 36 34.2365 36 33.6V16.8L32.1667 12H16.8333Z" fill="#CDD2EB" stroke="#CDD2EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M13 16.8002H36" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M29.6115 21.5999C29.6115 22.8738 29.073 24.0957 28.1145 24.9965C27.1559 25.8974 25.8559 26.4035 24.5004 26.4035C23.1448 26.4035 21.8448 25.8974 20.8863 24.9965C19.9277 24.0957 19.3893 22.8738 19.3893 21.5999" stroke="#425DC7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                        
-                                </div>
-                                <div class="revenues__button--text">
-                                    <span class="text__revenues">
-                                        Ticket médio
-                                    </span>
-                                    <span class="price__revenues">
-                                        R$ 437,59
-                                    </span>
-                                </div>
-                            
-                        </li>
-                                              
-                    </ul>
-
-                    <div class="canvas1">
-                        <canvas id="myChart__vendas"> </canvas>
-
-                    </div>
-                    <div class="legend__box">
-                        <button id="blue" onclick="toggleData(0)" class="legend-button">
-                        </button>
-                        <span class="legend-text">Estornado</span>
-    
-                        <button id="red" onclick="toggleData(1)" class="legend-button"></button>
-                        <span class="legend-text">Cancelado</span>
-    
-                        <button id="yellow" onclick="toggleData(2)" class="legend-button"></button>
-                        <span class="legend-text">Não pago</span>
-    
-                        <button id="green" onclick="toggleData(3)" class="legend-button"></button>
-                        <span class="legend-text">Pago</span>
-                    </div>
-
-                    <div class="canvas2">
-                        <canvas id="myChart__pedidos"> </canvas>
-
-                    </div>
-                    <div class="legend__box2">
-                        <button id="blue2" onclick="toggleData2(0)" class="legend-button">
-                        </button>
-                        <span class="legend-text2">Total de Pedidos</span>
-    
-                        
-                    </div>
-
-                    <div class="canvas__revendedores">
-
-                        <div class="canvas__revendedores--grafico">
-                            <div class="canvas3">
-                                <div class="dropdown__revendedores">
-                                    <span>Mostrar todos os revendedores</span> 
-        
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7.50024 9.75L12.0002 14.25L16.5002 9.75" stroke="#555555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                        
-                                </div>
-                                <canvas id="myChart__revendedores"> </canvas>
-        
-                            </div>
-                            <div class="legend__box3">
-                                <button id="blue3" onclick="toggleData3(0)" class="legend-button">
-                                </button>
-                                <span class="legend-text">Valor total de vendas</span>
-            
-                                <button id="red3" onclick="toggleData3(1)" class="legend-button"></button>
-                                <span class="legend-text">Quantidade de pedidos</span>
-            
-                                <button id="yellow3" onclick="toggleData3(2)" class="legend-button"></button>
-                                <span class="legend-text">Comissão a pagar</span>
-            
-                            </div>
-                        </div>
-
-                        <div class="revendedores__area">
-                            <h3 class="revendedores__title">
-                                🏆 Ranking de revendedores
-                                    
+                      
+                      <div id="pedidos" class="tabcontent">
+                      
+                        <h3 class="report">
+                            📈 <span>Relatório Geral</span> 
+                        </h3>
+                          
+                                              <ul class="sales">
+                                                  <li class="sales__item">
+                                                      <button class="tablinks active" onclick="openCity(event, 'vendas')">Vendas</button>
+                                                  </li>
+                          
+                                                  <li class="sales__item">
+                                                      <button class="tablinks" onclick="openCity(event, 'pedidos')">Pedidos</button>
+                                                  </li>
+                          
+                                                  <li class="sales__item">
+                                                      <button class="tablinks" onclick="openCity(event, 'revendedores')">Revendedores</button>
+                                                  </li>
+                          
+                                                  
+                                                  
+                                              </ul>
+                                              <hr>
+                      
+                        <div class="canvas2">
+                                                  <canvas id="myChart__pedidos"> </canvas>
+                          
+                                              </div>
+                                              <div class="legend__box2">
+                                                  <button id="blue2" onclick="toggleData2(0)" class="legend-button">
+                                                  </button>
+                                                  <span class="legend-text2">Total de Pedidos</span>
+                              
+                                                  
+                                              </div>
+                      </div>
+                      
+                      <div id="revendedores" class="tabcontent">
+                      
+                      
+                      
+                        <div class="teste">
+                          <div>
+                            <h3 class="report">
+                                📈 <span>Relatório Geral</span> 
                             </h3>
-
-                            <ul class="revendedores__list">
-                                <li class="revendedores__list--item">
-                                    <span>1º</span>
-                                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <circle cx="20" cy="20" r="20" fill="#F1F2F9"/>
-                                        <path d="M10.6847 26V14.3636H12.4403V19.4205H18.2415V14.3636H20.0028V26H18.2415V20.9261H12.4403V26H10.6847ZM22.5597 26V14.3636H26.7074C27.6089 14.3636 28.357 14.5189 28.9517 14.8295C29.5502 15.1402 29.9972 15.5701 30.2926 16.1193C30.5881 16.6648 30.7358 17.2955 30.7358 18.0114C30.7358 18.7235 30.5862 19.3504 30.2869 19.892C29.9915 20.4299 29.5445 20.8485 28.946 21.1477C28.3513 21.447 27.6032 21.5966 26.7017 21.5966H23.5597V20.0852H26.5426C27.1108 20.0852 27.5729 20.0038 27.929 19.8409C28.2888 19.678 28.5521 19.4413 28.7188 19.1307C28.8854 18.8201 28.9688 18.447 28.9688 18.0114C28.9688 17.572 28.8835 17.1913 28.7131 16.8693C28.5464 16.5473 28.2831 16.3011 27.9233 16.1307C27.5672 15.9564 27.0994 15.8693 26.5199 15.8693H24.3153V26H22.5597ZM28.304 20.75L31.179 26H29.179L26.3608 20.75H28.304Z" fill="#425DC7"/>
-                                    </svg>
-
-                                    <div class="name__sales__revendedor">
-                                        <span class="revender__name">Henrique Ramos</span>
-                                        <span class="sales__number">980 pedidos</span> 
-                                    </div>
-
-                                    <div class="sales__percent">
-                                        <span>18%</span>
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M10.9998 9.5L7.99976 6.5L4.99976 9.5" stroke="#158F2E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                            
-                                    </div>
-                                        
-                                </li>
-                                
-                            </ul>
+                          
+                                              <ul class="sales">
+                                                  <li class="sales__item">
+                                                      <button class="tablinks" onclick="openCity(event, 'vendas')">Vendas</button>
+                                                  </li>
+                          
+                                                  <li class="sales__item">
+                                                      <button class="tablinks" onclick="openCity(event, 'pedidos')">Pedidos</button>
+                                                  </li>
+                          
+                                                  <li class="sales__item">
+                                                      <button class="tablinks" onclick="openCity(event, 'revendedores')">Revendedores</button>
+                                                  </li>
+                          
+                                                  
+                                                  
+                                              </ul>
+                                              <hr>
+                        <div class="container__revender">
+                      
+                          <div class="canvas__revendedores">
+                          
+                                                  <div class="canvas__revendedores--grafico">
+                                                      <div class="canvas3">
+                                                          <div class="dropdown__revendedores">
+                                                            <p>
+                                                                Mostrar  <span class="rev__text">todos os revendedores</span> 
+                                                            </p>  
+                                                            
+                                  
+                                                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                  <path d="M7.50024 9.75L12.0002 14.25L16.5002 9.75" stroke="#555555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                              </svg>
+                                                                  
+                                                          </div>
+                                                          <canvas id="myChart__revendedores"> </canvas>
+                                  
+                                                      </div>
+                                                      <div class="legend__box3">
+                                                          <button id="blue3" onclick="toggleData3(0)" class="legend-button">
+                                                          </button>
+                                                          <span class="legend-text">Valor total de vendas</span>
+                                      
+                                                          <button id="red3" onclick="toggleData3(1)" class="legend-button"></button>
+                                                          <span class="legend-text">Quantidade de pedidos</span>
+                                      
+                                                          <button id="yellow3" onclick="toggleData3(2)" class="legend-button"></button>
+                                                          <span class="legend-text">Comissão a pagar</span>
+                                      
+                                                      </div>
+                                                  </div>
+                          
+                          
+                                              </div>
+                          
                         </div>
-
-                    </div>
-
-                    
-                    
-
-                                              
-                    
-
+                      
+                          </div>
+                          
+                            
+                      
+                                              <div class="revendedores__area">
+                                              <h3 class="revendedores__title">
+                                                  🏆 Ranking de revendedores
+                                                      
+                                              </h3>
+                      
+                                              <ul class="revendedores__list">
+                                                  
+                                                  
+                                                  
+                                              </ul>
+                      
+                                              <div class="see__all">
+                                                  <button>Ver todos</button>
+                                              </div>
+                                          </div>
+                      
+                      
+                        </div>
+                      </div>
                 </section>
+                
+
                 
             </main>
 
@@ -610,9 +658,10 @@
                                 </div>
                                 <div class="page__select">
                                     <button class="page__select--button">
-                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M8.00024 9.75L12.5002 14.25L17.0002 9.75" stroke="#555555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
+                                        <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.00024 1.75L5.50024 6.25L10.0002 1.75" stroke="#555555" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            
                                     </button>
                                     
                                 </div>
@@ -667,7 +716,7 @@
 
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
-	<script  src="main.js"></script>
+	<script  src="./assets/js/main.js"></script>
     
 </body>
 </html>

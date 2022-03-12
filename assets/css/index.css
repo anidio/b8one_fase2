@@ -43,10 +43,6 @@ body{
 
 /*HAMBURGUER*/
     
-button{
-    background: transparent;
-}
-
 .hamburguer__name{
     display: flex;
 }
@@ -61,6 +57,11 @@ button{
     width: 24px;
     height: 24px;
     padding: 6px 3px;
+    background-color: transparent;
+}
+
+.hamburguer__action button{
+    background-color: transparent;
 }
     
 .hamburguer__item{
@@ -91,6 +92,8 @@ button{
     bottom: 0;
 }
 
+
+
 /*MENU LATERAL*/
 
 .aside{
@@ -107,6 +110,7 @@ button{
     display: flex;
     align-items: center;
     gap: 16px;
+    background-color: transparent;
 }
 
 .lateral__menu__button--text{
@@ -177,11 +181,19 @@ button{
     color: #5B5C5F;
 }
 
+.tabcontent {
+    display: none;
+  }
+
+  #vendas{
+      display: block;
+  }
+
 .dropdown__list{
     display: none;
 }
 
-.lateral__menu__list--item:hover + .dropdown__list{
+.mostrar{
     display: flex;
 }
 
@@ -426,11 +438,12 @@ button{
 
 .premiere__description{
     display: flex;
+    gap: 16px;
     align-items: center;
 }
     
 .premiere__text{
-    margin: 18px 20px 18px 16px;
+    
     font-weight: 500;
     font-size: 14px;
     line-height: 18px;
@@ -442,9 +455,6 @@ button{
     color: #FFFFFF;
 }
 
-.filter__date__item{
-    background-color: transparent;
-}
     
 /*Dados*/
     
@@ -468,6 +478,14 @@ button{
     display: flex;
     gap: 4px;
 }
+
+.filter__date button:hover{
+    color:#425DC7;
+    border: 1px solid #425DC7;
+    height: 30px;
+    padding: 7px 15px;
+
+}
     
 .filter__date::-webkit-scrollbar {
     display: none;
@@ -481,12 +499,15 @@ button{
 
 
 .filter__date__item--active{
+    display: flex;
+    gap: 4px;
     background: #425DC7;
-    height: max-content;
     color: #FFFFFF;
 }
     
-.filter__date__item button{
+.filter__date button{
+    display: flex;
+    gap: 4px;
     border-radius: 8px;
     background-color: #FFFFFF;
     color: #333333;
@@ -495,7 +516,16 @@ button{
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
+    white-space: nowrap;    
 }
+
+.graphic__position{
+    
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 24px;
+}
+
     
 
     
@@ -509,6 +539,7 @@ button{
     line-height: 16px;
     letter-spacing: -0.005em;
     color: #555555;
+    margin: 16px 0;
 }
     
 .description__date__text>span{
@@ -546,13 +577,17 @@ button{
     letter-spacing: -0.005em;
     color: #555555;
     padding-bottom: 18px;
+    background-color: transparent;
 }
 
-.sales__item button:hover{
+.sales__item button:hover,
+.sales__item button.active
+ {
     color: #425DC7;    
     border-bottom: 3px solid #425DC7;
     padding-bottom: 15px;
 }
+
 
 hr{
     
@@ -613,6 +648,7 @@ hr{
     margin: 6px 22px 6px 0;
 
 }
+
 
 /*LEGENDA DOS GRÁFICOS*/
 .legend__box,
@@ -776,6 +812,11 @@ hr{
     height: 24px;    
 }
 
+.page__select--button{
+
+    background-color: transparent;
+}
+
 /*Botões de paginação*/
 
 .pagination{
@@ -803,9 +844,23 @@ hr{
 }
 
 
+
 .footer{
     margin-bottom: 8px;
 }
+
+.canvas2,
+.canvas3,
+.legend__box2,
+.legend__box3,
+.revendedores__area{
+    display: none;
+}
+
+.container__revender{
+    display: flex;
+}
+
 
 .pagination__select:nth-child(2) .pagination__select--button {
     background: #425DC7;
@@ -891,6 +946,7 @@ hr{
         font-size: 14px;
         line-height: 24px;
         color: #FFFFFF;
+        background-color:transparent;
     }
 
     .premiere__button:hover{
@@ -910,9 +966,8 @@ hr{
     }
 
     .filter__revenues__item{
-        max-width: 350,67px;
+        width: 350.67px;
         height: 72px;
-        width: 100%;
         overflow-x: hidden;
     }
 
@@ -985,27 +1040,28 @@ hr{
     .canvas1{
         width: 1116px;
         height: 196px;
-        display: none;
+        
+        
     }
 
     .canvas2{
         width: 1116px;
         height: 291px;
-        display: none;
+        display: block;
+        
     }
 
     .canvas3{
+        display: block;
         width: 680px;
-        height: 235px;
+        height: 259px;
         margin-bottom: 70px;
     }
 
-    .legend__box{
-        display: none;
-    }
-
-    .legend__box2{
-        display: none;
+    .legend__box,
+    .legend__box2,
+    .legend__box3{
+        display: block;
     }
 
     .dropdown__revendedores{
@@ -1013,7 +1069,7 @@ hr{
         align-items: center;
         justify-content: center;
         gap: 16px;
-        margin-bottom: 24px;
+        margin: 0 0 24px ;
         width: 280px;
         height: 40px;
         border: 1px solid #999999;
@@ -1025,7 +1081,28 @@ hr{
         color: #999999;
     }
 
+    .rev__text{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.005em;
+        color: #333333;
+    }
+
     .canvas__revendedores{
+        display: flex;
+        
+    }
+
+    .teste{
+        display: flex;
+    }
+
+    .hr3{
+        width: 680px;
+    }
+    
+    .container__revendedores{
         display: flex;
     }
 
@@ -1033,6 +1110,12 @@ hr{
         display: flex;
         gap: 16px;
         margin-top: 24px;
+        height: 30px;
+    }
+
+    .revendedores__list--item span{
+        display: flex;
+        align-items: center;
     }
 
     .name__sales__revendedor{
@@ -1057,6 +1140,7 @@ hr{
         align-items: center;
         letter-spacing: -0.005em;
         color: #555555;
+        width: 132px;
     }
 
     .sales__percent{
@@ -1075,15 +1159,68 @@ hr{
     }
 
     .revendedores__area{
+        display: block;
         width: 340px;
         height: 429px;
-        margin-left: 64px;
         border: 2px solid #F1F2F9;
         border-radius: 8px;
         background-color: #ffffff;
         padding: 24px;
+        margin: 24px 0 24px 64px;
     }
 
+    .revendedores__list:last-child{
+        padding-bottom: 24px;
+        
+    }
+
+    .graphic__position{
+        display: flex;
+        background-color: #FFFFFF;
+        border-radius: 8px;
+        padding: 24px;
+    }
+
+    .revendedores__list{
+        border-right: 5px solid #CDD2EB;
+    }
+
+    .revendedores__area{
+        padding-right: 15px;
+    }
+
+    .revendedores__list--item:hover{
+        border-right: 5px solid #425DC7;
+    }
+
+    
+
+    .see__all button{
+        display: flex;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: #425DC7; 
+        border: 1.5px solid #425DC7;
+        border-radius: 8px;
+        padding: 8px 16px;
+        background-color: transparent;
+        
+    }
+
+    .see__all{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        border-top: 2px solid #F1F2F9 ;
+        padding-top: 23px;
+        margin-top: 20px;
+
+    }
+
+ 
+    
     
 
     
