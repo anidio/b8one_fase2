@@ -268,8 +268,9 @@ var ano = document.getElementById('ano');
 var pers = document.getElementById('pers');
 
 sete.onclick = function(){
+    sete.className.remove = ""
  sete.className = "filter__date__item--active";
- drop1.className = "";
+ quinze.className = "";
  mes.className = "";
  ano.className = "";
  pers.className = "";
@@ -428,6 +429,33 @@ async function populateRevendedores(){
 }
 
 populateRevendedores();
+
+/*POPULAR LISTA DE header */
+
+async function fetchUser(){
+    const response = await fetch("https://test-final.b8one.academy/user");
+    const responseJson = await response.json()
+
+    return responseJson;
+}
+
+async function populateHeader(){
+    const usuario = await fetchUser();
+
+    const userName = document.querySelector(".company__name")
+    userName.innerHTML = (usuario.organization);
+
+    const perfil = document.querySelector(".my__name")
+    perfil.innerHTML = (usuario.username);
+
+    const perfilFoto = document.querySelector(".fotoPerfil")
+    perfilFoto.src = (usuario.photo);
+
+
+    
+}
+
+populateHeader()
 
 /*TAB FUNCTION*/
 
